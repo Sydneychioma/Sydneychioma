@@ -21,7 +21,7 @@ def get_bedrock_client():
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to your RAG chatbot API!"}
+    return {"message": "Welcome to the Chimdi Admission chatbot!"}
 
 @app.get("/bedrock/query")
 async def query_bedrock(text: str = Query(..., description="Input text for the model")):
