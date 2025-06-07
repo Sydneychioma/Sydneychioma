@@ -59,7 +59,7 @@ def forward_to_agent(user_input):
     try:
         smtp = smtplib.SMTP("smtp.example.com", 587)
         smtp.starttls()
-        smtp.login("bot@example.com", "your_password")
+        smtp.login("sydneyomar0@gmail.com", "TiredofForgetting")
         message = f"Subject: Chatbot Escalation\n\nThe chatbot could not answer this query:\n\n{user_input}"
         smtp.sendmail("bot@example.com", AGENT_EMAIL, message)
         smtp.quit()
